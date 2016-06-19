@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  #header
+    input.button-heatmap(type='submit', value='Show Heatmap', onclick="toggleHeatmap()")
+    |  Session ID: 
+    label#uuid    
+  #container
+    | Plain text can include <strong>html</strong>
+    h1= title
+    p Welcome to #{title}
+  
